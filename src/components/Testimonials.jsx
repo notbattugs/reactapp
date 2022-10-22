@@ -1,33 +1,33 @@
 import Star from "./Star";
 
-const Testimonials = ({ image, firstName,secondName,space, content, star }) => {
-
-   
-
-    return (
-        <div>
-            {
-                star.map(e => {
-                    return (
-                        <Star />
-                    )
-                })
-            }
-            <p>
-                {content}
+const Testimonials = ({ image, name, content, star }) => {
+  return (
+    <div style={{ display: "flex", margin: 10 }}>
+      <div
+        style={{
+          width: 330,
+          height: 330,
+          backgroundColor: "#FFFFFF",
+          margin: 10,
+        }}
+      >
+        {star.map((e) => {
+          return <Star />;
+        })}
+        <p>{content}
             </p>
-            <div>
-                <img src={image} alt={image} style={{borderRadius:1000,}} />
-                <h3>
-                    {firstName}
-                    {space}
-                    {secondName}
-                   
-                </h3>
-            </div>
+       
+        <div style={{display:'flex' , justifyContent:'center' , alignItems:'center', flexDirection: "column"}}>
+          <img
+            src={image}
+            alt={image}
+            style={{ width: 30, height: 30, borderRadius: 50,  }}
+          />
+          <h3>{name}</h3>
         </div>
-    )
-
-}
+      </div>
+    </div>
+);
+};
 
 export default Testimonials;
