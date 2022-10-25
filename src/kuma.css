@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundPic {
+    width: 100vw;
+    height: 100vh;
+}
+
+.logoClass {
+    position: absolute;
+    left:124px;
+    
+    top:   30px;
+    
+}

@@ -1,23 +1,45 @@
-import Testimonials from "./components/Testimonials";
-import Presentation from "./components/Presentation";
+// import {BrowserRouter,Routes,Route} from 'react-router-dom'
+// import  Home from './pages/Home';
+// import SignUp from './pages/signup';
+// import Login from './pages/Login';
+// import Header from './components/header';
 
+// const App = () => {
+//   return (
 
-const App = () => {
-  return (
-    <div style={{ display:"flex",  backgroundColor:"beige",width:"100%",height:"100vh" }}>
-      <Testimonials
-        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR8Y3tLEo_9RvSpPa5QBM2UBJqDvXzQC-2XqdOMQftqLDMuLGGW2QmeYvJUD7lySLU1uw&usqp=CAU"
-        name="Amy Klassen"
-        content="Give everyone you work with—inside and outside your emoji, keep conversations focused in channels, and simplify all your communication into one place."
-        star={[0, 1, 2, 3, 4]}
-      />
-      <Presentation floorImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR8Y3tLEo_9RvSpPa5QBM2UBJqDvXzQC-2XqdOMQftqLDMuLGGW2QmeYvJUD7lySLU1uw&usqp=CAU"
-      contet = "Data-Driven Design is Killing Our Instincts "
-      fontContent= " Our latest updates and blogs about managing your team Our latest updates and blogs about managing your team"
-      juctTime='2nd January ,2022'
-      name = 'Jane Cooper       |'/>
-    </div> 
-  );
-};
+//     <BrowserRouter>
 
-export default App;  
+//     <Routes>
+//       <Route path="/Home" element={<Home/>} />
+//       <Route path="/Login" element={<Login/>} />
+//       <Route path="/SignUp" element={<SignUp/>} />
+//     </Routes>
+//      <Header/>
+//     </BrowserRouter>
+//   );
+// };
+
+// export default App;  
+
+import React from 'react'
+import backgroundPicture from './assets/backgroundPicture.jpg'
+import LogoDiv from './assets/teamText.png'
+import './kuma.css'
+function App() {
+    return (
+        <div className='container'>
+            <div style={{width: "100vw", height: "100vh",
+                backgroundImage:
+                    "url('https://s3-alpha-sig.figma.com/img/4350/50b7/a0ccc8f193e7504e307e73c31a017e88?Expires=1667779200&Signature=Atk~QO18TMzE1dLirfOUQN7QPlKw0LcxmUPNxBV8pSeY-~ePQ0OzuQCbmOG3upFh9tmib5c2M9X0wTuU9Hie14AxaIwsb~qAAH7D8VsELRvUUQ6bVclngRP3Z~6AwkcAxaqBA0tNsbqYwRuMyJq-mqeqk3TunpnCeolNhaZGpU0Hwrtr9kf-m3QZ4iVXD6yjWEYiFSKmfsT-SSV5tNDx3QlOBtXSOYC1K3WATNZwawA2kKcHvh9blg9q8LJZ6S8C5mBzNdkuAkUJ1uR0u-ZjZFICSfgT2DFiqJT3NJOQQOGGUAsq5MTTtqDSNCnr8166WDnxF8OWt-7OqEjE00EeQg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA')"
+            }}>
+
+            </div>
+            <div className='LogoDiv'>
+                <img src={LogoDiv} alt="" className='logoClass' />
+            </div>
+
+        </div >
+    )
+}
+
+export default App
